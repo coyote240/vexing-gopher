@@ -1,0 +1,11 @@
+[Unit]
+Description=Vexing Workshop Gopher Server
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=5
+ExecStart=/var/gopher/vexing-gopher/run_server.py
+
+[Install]
+WantedBy=default.target

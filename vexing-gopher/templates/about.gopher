@@ -1,0 +1,13 @@
+{% extends "layout.gopher" %}
+{% block body %}
+
+Emerging from the Unthinking Depths of the Galactic Core, signal9
+of the Vexing Workshop has ascended and found his place on the 
+Net.
+
+{{ 'Colophon' | underline('-')  }}
+
+This site relies upon the excellent Flask-Gopher package @:
+{{ menu.html('Flask-Gopher on Github', 'http://github.com/michael-lazar/flask-gopher') }}
+
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends "layout.gopher" %}
+{% block body %}
+
+{{ 'Vexing Workshop' | figlet(font='graffiti') }}
+
+{{ 'Greetings DEFCONMeshNet!!!' | center }}
+
+You have encountered the first and possibly only gopher server 
+on the MeshNet! Like the mesh net, this is a work in progress.
+Check back from time to time to see what nonsense I've decided
+to build into my gopher domain!
+
+{{ menu.dir('About', url_for('about')) }}
+
+{% endblock %}

@@ -1,0 +1,6 @@
+{{ menu.dir('Home', url_for('index')) }}
+
+{% block body %}{% endblock %}
+
+{{ '_' * gopher.width }}
+Vexing Workshop 2020
