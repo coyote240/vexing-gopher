@@ -5,7 +5,7 @@ Description=Vexing Workshop Gopher Server
 Type=simple
 Restart=always
 RestartSec=5
-ExecStart=/var/gopher/vexing-gopher/run_server.py
+ExecStart=vexing_gopher -H <hostname>
 
 [Install]
 WantedBy=default.target
