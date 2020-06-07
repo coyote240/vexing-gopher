@@ -17,5 +17,6 @@ pyflakes==2.2.0
 pyOpenSSL==19.1.0
 six==1.15.0
 tabulate==0.8.7
+-e git+git@github.com:coyote240/vexing-gopher.git@ba4f6a66118d203ebce5ab6d5bca7345c53c13ba#egg=vexing_gopher
 Werkzeug==0.16.1
 zipp==1.2.0

@@ -11,11 +11,16 @@ setup(name='vexing_gopher',
       version='0.0.1',
       description='Gopher server for DEFCONMeshnet',
       long_description=long_description,
+      url='https://github.com/coyote240/vexing-gopher',
       author='signal9',
+      author_email='adam@vexingworkshop.com',
       packages=find_packages(exclude=['tests']),
       include_package_data=True,
       package_data={
-          'vexing_gopher': ['templates/*.gopher']
+          'vexing_gopher': [
+              'templates/*.gopher',
+              'service/vexing.service'
+          ]
       },
       entry_points={
           'console_scripts': [
