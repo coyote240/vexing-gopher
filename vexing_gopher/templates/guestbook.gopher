@@ -1,0 +1,16 @@
+{% extends "layout.gopher" %}
+{% block body %}
+
+{{ 'Vexing Guestbook' | figlet(font='graffiti') }}
+
+{{ menu.query('Sign my Guestbook! (Max. 250 chars)', url) }}
+
+{% for message, remote_ip, datestamp in messages %}
+{{ '-' * 80 }}
+
+{{ datestamp }} from {{ remote_ip }}
+{{ message }}
+
+{% endfor %}
+
+{% endblock %}
